@@ -20,7 +20,7 @@ $(".img-upload-input").on('change',function(event) {
     {
         name=file.name;
         file_reader.readAsDataURL(file);
-        let fileExtension = name.replace(/^.*\./, '');
+        let fileExtension = name.replace(/^.*\./, '').toLowerCase();
         let validImageTypes = ["jpg", "jpeg", "png","svg"];
         try 
         {
